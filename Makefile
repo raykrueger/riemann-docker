@@ -7,3 +7,6 @@ build:
 
 run: build
 	docker run --rm -it -p 5555:5555 -p 5556:5556 $(repo)
+
+shell: build
+	docker run --rm -it $(repo) /bin/bash
